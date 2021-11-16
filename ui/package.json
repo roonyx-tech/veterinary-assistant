@@ -2,6 +2,7 @@
   "name": "decision-trees-ui",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://roonyx-tech.github.io/veterinary-assistant/",
   "dependencies": {
     "@types/react-router-dom": "^4.3.1",
     "cytoscape": "^3.4.0",
