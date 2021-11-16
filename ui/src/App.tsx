@@ -82,11 +82,11 @@ class App extends React.Component<any, IAppState, any> {
       <Router>
         <div>
           <nav>
-            <NavLink exact={true} to="/">Home</NavLink>
+            <NavLink exact={true} to="/veterinary-assistant">Home</NavLink>
             <NavLink to="/tree">Tree View</NavLink>
             {/*<NavLink to="/profile">Profile</NavLink>*/}
           </nav>
-          <Route path="/" render={Home} exact={true} />
+          <Route path="/veterinary-assistant" render={Home} exact={true} />
 
           {/*<Route path="/profile" render={renderProfile} />*/}
           <Route exact={true} path="/n/:nodename" render={viewNode} />
