@@ -81,9 +81,10 @@ class App extends React.Component<any, IAppState, any> {
     return (
       <Router>
         <div style={{height: '80vh'}}>
-          <nav>
-            <NavLink exact={true} to="/veterinary-assistant">Home</NavLink>
-            <NavLink to="/veterinary-assistant/tree">Tree View</NavLink>
+          <nav className="header">
+            <NavLink className="headerNavLink" exact={true} to="/veterinary-assistant">Home</NavLink>
+            /
+            <NavLink className="headerNavLink" to="/veterinary-assistant/tree">Tree View</NavLink>
             {/*<NavLink to="/profile">Profile</NavLink>*/}
           </nav>
           <Route path="/veterinary-assistant" render={Home} exact={true} />
