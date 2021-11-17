@@ -89,10 +89,10 @@ class App extends React.Component<any, IAppState, any> {
           <Route path="/veterinary-assistant" render={Home} exact={true} />
 
           {/*<Route path="/profile" render={renderProfile} />*/}
-          <Route exact={true} path="/n/:nodename" render={viewNode} />
-          <Route path="/n/:nodename/edit" render={renderJson} />
-          <Route path="/tree/edit" render={editTree} />
-          <Route exact={true} path="/tree" render={renderTree} />
+          <Route exact={true} path="/veterinary-assistant/n/:nodename" render={viewNode} />
+          <Route path="/veterinary-assistant/n/:nodename/edit" render={renderJson} />
+          <Route path="/veterinary-assistant/tree/edit" render={editTree} />
+          <Route exact={true} path="/veterinary-assistant/tree" render={renderTree} />
         </div>
       </Router>
     );
