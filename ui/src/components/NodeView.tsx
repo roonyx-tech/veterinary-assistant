@@ -17,7 +17,7 @@ function RenderOutcome(outcome: IOption): JSX.Element {
 }
 export function NodeContent(params: { node: INode }): JSX.Element {
     return (<div key={params.node.name} className="card">
-        <div>
+        <div style={{fontSize: '25px', fontWeight: 500}}>
             {/*TODO: разобраться с map по id*/}
             {params.node.type === 'outcome' &&
               <div>

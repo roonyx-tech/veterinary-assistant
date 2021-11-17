@@ -11,8 +11,8 @@ export default function Home() {
   };
   return (
     <div /*className="tile"*/>
-      <h1>Before starting</h1>
-      <p>Check history, physical/neurological examinations</p>
+      <h1>Seizures</h1>
+      <p style={{fontSize: '25px', fontWeight: 500}}>Check history, physical/neurological examinations</p>
       <div className="tile__actions">
         {/*<Link to="/tree/edit">*/}
         {/*    <button>*/}
