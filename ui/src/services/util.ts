@@ -18,7 +18,7 @@ export const testModel: INode[] = [
         name: 'suspect-hydrocephalus',
         outcomes: [
             {
-                label: 'Go to next step',
+                label: 'Ultrasound of brain',
                 name: 'ultra-sound-of-brain'
             }
         ],
