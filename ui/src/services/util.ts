@@ -1,6 +1,18 @@
 import { INode } from '../domain/model'
 export const testModel: INode[] = [
     {
+        description: 'Stop. Assume transient seizure of unknown cause',
+        isRootNode: false,
+        name: 'radiograph-thorax-image-abdomen-normal',
+        outcomes: [
+            {
+                label: 'Perform brain CT/MRI scan and EEG',
+                name: 'perform-brain-scan'
+            }
+        ],
+        type: 'outcome',
+    },
+    {
         description: 'Suspect hydrocephalus',
         isRootNode: false,
         name: 'suspect-hydrocephalus',
@@ -18,7 +30,7 @@ export const testModel: INode[] = [
         name: 'brain-neoplisia',
         outcomes: [
             {
-                label: 'Go to next step',
+                label: 'Perform brain CT/MRI scan and EEG',
                 name: 'perform-brain-scan'
             }
         ],
@@ -30,7 +42,7 @@ export const testModel: INode[] = [
         name: 'pug-dog-encephalitis',
         outcomes: [
             {
-                label: 'Go to next step',
+                label: 'Perform brain CT/MRI scan and EEG',
                 name: 'perform-brain-scan'
             }
         ],
@@ -72,7 +84,7 @@ export const testModel: INode[] = [
         name: 'perform-brain-scan-abnormal',
         outcomes: [
             {
-                label: 'Go to next step',
+                label: 'Perform CSF analisys',
                 name: 'perform-csf'
             }
         ],
@@ -108,7 +120,7 @@ export const testModel: INode[] = [
                 name: 'brain-neoplisia'
             },
             {
-                label: '1-7 year pug dog - pug dog encephalitis',
+                label: '1-7 year pug dog',
                 name: 'pug-dog-encephalitis'
             },
             {
@@ -189,7 +201,7 @@ export const testModel: INode[] = [
         outcomes: [
             {
                 label: 'normal results',
-                name: 'perform-brain-scan'
+                name: 'radiograph-thorax-image-abdomen-normal'
             },
             {
                 label: 'abnormal results',
@@ -210,10 +222,6 @@ export const testModel: INode[] = [
             {
                 label: 'abnormal results',
                 name: 'perform-brain-scan-abnormal'
-            },
-            {
-                label: 'go to step 12 (if your previous step was "Radiograph, thorax, image abdomen")',
-                name: 'perform-neurological-examination-normal'
             }
         ],
         type: 'question',

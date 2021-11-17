@@ -80,7 +80,7 @@ class App extends React.Component<any, IAppState, any> {
 
     return (
       <Router>
-        <div>
+        <div style={{height: '80vh'}}>
           <nav>
             <NavLink exact={true} to="/veterinary-assistant">Home</NavLink>
             <NavLink to="/tree">Tree View</NavLink>

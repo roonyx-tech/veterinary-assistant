@@ -10,7 +10,7 @@ export default function Home() {
     // console.log('starting digital bylaw test now')
   };
   return (
-    <div className="tile">
+    <div /*className="tile"*/>
       <h1>Before starting</h1>
       <p>Check history, physical/neurological examinations</p>
       <div className="tile__actions">
@@ -30,7 +30,7 @@ export default function Home() {
           </button>
         </Link>
         <Link to="/n/evaluate-hemogram-chemistries-liver">
-          <button onClick={onStart}>
+          <button onClick={onStart} style={{marginTop: '10px'}}>
             negative findings
           </button>
         </Link>

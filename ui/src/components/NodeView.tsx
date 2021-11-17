@@ -9,14 +9,14 @@ export interface INodeViewParams {
 
 function RenderOutcome(outcome: IOption): JSX.Element {
     return (<Link key={outcome.name} to={`/n/${outcome.name}`}>
-        <button>
+        <button style={{marginTop: '10px'}}>
             {/*button text*/}
             {outcome.label}
         </button>
     </Link>)
 }
 export function NodeContent(params: { node: INode }): JSX.Element {
-    return (<div key={params.node.name} className="tile">
+    return (<div key={params.node.name} className="card">
         <div>
             {/*TODO: разобраться с map по id*/}
             {params.node.type === 'outcome' &&

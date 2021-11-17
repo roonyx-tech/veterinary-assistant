@@ -5,13 +5,21 @@
   --highlight: #F8B500;
   --lighter: #777;
   --error: #FC3C3C;
+  /*height: 80vh;*/
 }
 
+.card {
+  margin: auto;
+  /*height: 80vh;*/
+}
 
 body {
   font-size: 18px;
   line-height: 150%;
   font-family: 'Libre Franklin', sans-serif;
+  /*height: 80vh;*/
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 h1, h2, h3 {
@@ -61,9 +69,13 @@ button:hover {
   margin-bottom: 30px;
   overflow: hidden;
   align-items: baseline;
+  height: auto;
 }
 .tile__actions {
   height: 45px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 nav h1 {
