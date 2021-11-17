@@ -72,7 +72,7 @@ button:hover {
   height: auto;
 }
 .tile__actions {
-  height: 45px;
+  /*height: 45px;*/
   margin-top: 40px;
   display: flex;
   flex-direction: column;

@@ -18,13 +18,30 @@ export function NodeView(params: { node: INode, onOutcome: (opt: IOption) => any
     }
 
     return (<div key={params.node.name} className="tile graph-node-dialog">
-        <h3>{params.node.name}</h3>
-        <p>
-            {params.node.description}
-        </p>
+        <div>
+            {/*TODO: разобраться с map по id*/}
+            {params.node.type === 'outcome' &&
+            <div>
+                <h2>Possible diagnoses:</h2>
+                {params.node.description.split(',').map(e => {
+                    return <p key={e}>- {e}</p>
+                })}
+            </div>
+            }
+            {params.node.type !== 'outcome' && params.node.description}
+        </div>
+
         <div className="tile__actions">
+            {/*buttons block*/}
             {params.node.outcomes ? params.node.outcomes.map(renderOutcome) : <span />}
         </div>
+        {/*/!*<h3>{params.node.name}</h3>*!/*/}
+        {/*<p>*/}
+        {/*    {params.node.description}*/}
+        {/*</p>*/}
+        {/*<div className="tile__actions">*/}
+        {/*    {params.node.outcomes ? params.node.outcomes.map(renderOutcome) : <span />}*/}
+        {/*</div>*/}
     </div>)
 }
 
