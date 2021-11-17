@@ -24,12 +24,12 @@ export default function Home() {
         {/*        VIEW TREE*/}
         {/*</button>*/}
         {/*</Link>*/}
-        <Link to="/n/home-page-positive-findings">
+        <Link to="/veterinary-assistant/n/home-page-positive-findings">
           <button onClick={onStart}>
             positive findings
           </button>
         </Link>
-        <Link to="/n/evaluate-hemogram-chemistries-liver">
+        <Link to="/veterinary-assistant/n/evaluate-hemogram-chemistries-liver">
           <button onClick={onStart} style={{marginTop: '10px'}}>
             negative findings
           </button>
